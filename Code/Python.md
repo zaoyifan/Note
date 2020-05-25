@@ -1,6 +1,8 @@
-# Pip
+# Python
 
-## 国内源
+## Pip
+
+### 国内源
 
  ```
 阿里云： http://mirrors.aliyun.com/pypi/simple/
@@ -10,9 +12,9 @@
 中国科学技术大学： http://pypi.mirrors.ustc.edu.cn/simple/
  ```
 
-# Conda
+## Conda
 
-## 虚拟环境
+### 虚拟环境
 
 ```bash
 conda env list # 查看虚拟环境
@@ -28,27 +30,27 @@ deactivate # 退出
 conda remove --prefix=D:\python36\py36 --all # 删除
 ```
 
-# Pyinstaller
+## Pyinstaller
 
-## Python程序打包
+### Python程序打包
 
 ```shell
 pyinstaller deploy.py # 可通过pyinstalller -h查看其他选项，生成的可执行程序在dist文件夹下
 ```
 
-## 打包过程出现的相关问题
+### 打包过程出现的相关问题
 
-### 打包tensorflow存在的问题
+打包tensorflow存在的问题
 
 参考博客：[ubuntu下利用pyinstaller将tensorflow进行打包](https://blog.csdn.net/mr_health/article/details/89684301)
 
-### RecursionError或UnicodeDecodeError
+RecursionError或UnicodeDecodeError
 
 参考博客：[pyinstaller打包报错： RecursionError: maximum recursion depth exceeded，UnicodeDecodeError](https://blog.csdn.net/sinat_32651363/article/details/82841026)
 
-# Visdom
+## Visdom
 
-## 初次运行
+### 初次运行
 
 初次运行python -m visdom.server，会卡在Downloading scripts, this may take a little while
 
@@ -57,7 +59,7 @@ pyinstaller deploy.py # 可通过pyinstalller -h查看其他选项，生成的�
 3. 替换site-packages\visdom下的static文件夹
 4. 执行python -m visdom.server
 
-## 远程访问
+### 远程访问
 
 1. 连接ssh时，将服务器的8097端口重定向到本地8097端口
 
@@ -78,9 +80,9 @@ python -m visdom.server
 export no_proxy=loacalhost
 ```
 
-# Q&A
+## Q&A
 
-## 启动Python出现Failed calling sys.\_\_interactivehook\_\_
+### 启动Python出现Failed calling sys.\_\_interactivehook\_\_
 
 1. 进入site-packages\pyreadline\lineeditor目录
 2. 打开history.py文件

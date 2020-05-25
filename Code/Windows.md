@@ -1,12 +1,14 @@
-# Cmd
+# Windows
 
-## 添加环境变量
+## Cmd
+
+### 添加环境变量
 
 ```powershell
 set PATH=%PATH%;C:\Anaconda3 # %PATH%和环境变量路径相对位置可以互换，当前路径为%cd%
 ```
 
-## 设置代理
+### 设置代理
 
 ```powershell
 # 设置代理
@@ -19,9 +21,9 @@ set http_proxy=
 set https_proxy=
 ```
 
-# Git
+## Git
 
-## 设置代理
+### 设置代理
 
 ```bash
 # 设置代理

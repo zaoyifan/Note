@@ -1,7 +1,8 @@
+# Linux
 
-# Shell/Bash
+## Shell/Bash
 
-## 设置代理
+### 设置代理
 
 ```bash
 # 设置代理
@@ -14,7 +15,7 @@ unset http_proxy
 unset https_proxy
 ```
 
-## 相关技巧
+### 相关技巧
 
 ```bash
 # 快速删除包含大量文件的文件夹（不要忘记文件夹后的“/”）
@@ -23,9 +24,9 @@ rsync --delete-before -d /tmp/empty/ /the/folder/you/want/delete/
 rsync -a --delete-before --progress --stats /tmp/empty.txt /the/data/you/want/delete.txt
 ```
 
-# CMake
+## CMake
 
-## Linux终端环境配置
+### Linux终端环境配置
 
 ```bash
 # 1. 下载CMake：https://cmake.org/files/
@@ -38,7 +39,7 @@ export PATH=${CMAKE_HOME}/bin:$PATH
 cmake -version
 ```
 
-## 语法规则
+### 语法规则
 
 ```cmake
 # 指定需要最小的cmake版本号
@@ -158,19 +159,19 @@ PROJECT_BINARY_DIR
 ```
 
 
-## 参考资料
+### 参考资料
 
 - [cmake手册详解](https://www.cnblogs.com/549294286/p/6583189.html)
 
-# Make
+## Make
 
-## 参考资料
+### 参考资料
 
 - [Makefile教程：Makefile文件编写1天入门](http://c.biancheng.net/makefile/)
 
-# GPU
+## GPU
 
-## 显卡相关信息查询
+### 显卡相关信息查询
 
 ```bash
 # 查看显卡型号
@@ -180,9 +181,9 @@ cat /proc/driver/nvidia/version
 ```
 根据生成的十六进制数在[The PCI ID Repositor](http://pci-ids.ucw.cz/mods/PC/10de?action=help?help=pci)网站查询显卡型号。
 
-# HPC
+## HPC
 
-## module命令
+### module命令
 
 ```bash
 # 查看可用模块
@@ -195,7 +196,7 @@ module list
 module unload anaconda3
 ```
 
-## slurm命令
+### slurm命令
 
 ```bash
 # 申请空间排队
@@ -206,22 +207,22 @@ squeue
 ssh gpu-01
 ```
 
-## 参考资料
+### 参考资料
 
 - [北京大学高性能计算使用指南](http://hpc.pku.edu.cn/_book/index.html)
 - [北京大学国际数学中心微型工作站使用指南](http://bicmr.pku.edu.cn/~wenzw/pages/index.html)
 
-# GDAL
+## GDAL
 
-## Linux平台GDAL编译
+### Linux平台GDAL编译
 
-### 1. 下载相关库
+1. 下载相关库
 
 - [gdal](http://trac.osgeo.org/gdal/wiki/DownloadSource)
 - [geos](http://trac.osgeo.org/geos)
 - [proj](http://download.osgeo.org/proj/)
 
-### 2. 安装proj
+2. 安装proj
 
 ```shell
 cd /root/buaa/BUAA_Target/GDAL/proj-4.9.3
@@ -232,7 +233,7 @@ make
 make install
 ```
 
-### 3. 安装geos
+3. 安装geos
 
 ```shell
 cd /root/buaa/BUAA_Target/GDAL/geos-3.5.1
@@ -243,7 +244,7 @@ make
 make install
 ```
 
-### 4. 安装gdal
+4. 安装gdal
 
 ```shell
 cd /root/buaa/BUAA_Target/GDAL/gdal-2.1.2
@@ -255,7 +256,7 @@ make
 make install
 ```
 
-### 5. 配置Python
+5. 配置Python
 
 ```shell
 cd swig/python
@@ -263,15 +264,15 @@ python setup.py build
 python setup.py install
 ```
 
-### 6. 测试gdal
+6. 测试gdal
 
 ```python
 import gdal
 ```
 
-# OpenCV
+## OpenCV
 
-## Linux平台编译与环境配置
+### Linux平台编译与环境配置
 
 ```bash
 # 1. 下载官方Sources包，解压
