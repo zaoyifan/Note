@@ -1,7 +1,6 @@
 * **代码笔记**
+  * [Windows](Code/Windows.md)
   * [Linux](Code/Linux.md)
   * [Python](Code/Python.md)
-  * [Windows](Code/Windows.md)
-  * [Toolbox](Code/Toolbox.md)
   * [Matlab](Code/Matlab.md)
-
+  * [Toolbox](Code/Toolbox.md)
