@@ -16,10 +16,6 @@
    conda create -n mmdetection python=3.7
    conda activate mmdetection
    conda install pytorch torchvision cudatoolkit -c pytorch # 注意与系统CUDA版本一致，PyTorch版本取决于CUDA以及mmdetection的版本
-   # 安装mmcv（pip install mmcv）
-   git clone https://github.com/open-mmlab/mmcv.git
-   cd mmcv
-   pip install -e .
    # 安装Cython
    pip install Cython
    # 安装pycocotools
@@ -29,6 +25,10 @@
    cd mmdetection
    # 安装依赖包
    pip install -r requirements.txt
+   # 若上一步未成功安装mmcv，则手动安装mmcv（pip install mmcv）
+   git clone https://github.com/open-mmlab/mmcv.git
+   cd mmcv
+   pip install -e .
    ```
 
 5. 修改编译文件
