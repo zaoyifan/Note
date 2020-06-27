@@ -4,3 +4,6 @@
   * [Python](Code/Python.md)
   * [Matlab](Code/Matlab.md)
   * [Toolbox](Code/Toolbox.md)
+
+* 算法笔记
+  * [特征](Algorithm/Feature.md)
