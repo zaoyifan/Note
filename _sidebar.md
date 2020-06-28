@@ -1,4 +1,4 @@
-<center>那些不可思议的笔记</center>
+* <center>那些不可思议的笔记</center>
 
 * 代码笔记
   * [Windows](Code/Windows.md)
