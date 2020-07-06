@@ -1,5 +1,19 @@
 # Toolbox
 
+## TensorFlow
+
+### Q&A
+
+1. 程序在训练过程中突然中断或者报关于CUDA的错误，如下所示
+
+   ```
+   Error polling for event status: failed to query event: CUDA_ERROR_LAUNCH_FAILED
+   Unexpected event status: 1
+   Process finished with exit code -1073741819 (0xC0000005)
+   ```
+
+   出现这种情况一般是CUDA或者NVIDIA驱动的版本不一致导致的，在命令行nvidia-smi，可以发现NVIDIA驱动经过最近升级变为了451.48，其对应CUDA版本为11.0，升级CUDA问题得到解决。
+
 ## mmdetection
 
 ### windows 10环境中的配置方法（不可用）
