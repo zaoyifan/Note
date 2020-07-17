@@ -16,14 +16,19 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 
 或者进入控制面板-程序-启用或关闭 Windows 功能勾选 `适用于 Linux 的 Windows 子系统`，完成后重启计算机
 
-### 安装
+### 环境
 
-打开 `Windows PowerShell` 输入
+打开 `Windows PowerShell` 执行
 
 ```powershell
-Add-AppxPackage .\Ubuntu_2004.2020.424.0_x64.appx
+$userenv = [System.Environment]::GetEnvironmentVariable("Path", "User")
+[System.Environment]::SetEnvironmentVariable("PATH", $userenv + "D:\Ubuntu", "User")
 ```
+
+### 安装
+
+将下载的appx文件的后缀改为zip，然后解压到想要安装的位置，以管理员身份运行ubuntu2004.exe，它会自动在此目录下安装好ubuntu，如D:\Ubuntu
 
 ### 运行
 
-打开开始菜单中的Ubuntu 20.04 LTS
+在 `cmd` 中执行 `bash` 或者双击 `.exe` 程序运行
