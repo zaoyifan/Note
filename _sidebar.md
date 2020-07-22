@@ -6,7 +6,5 @@
   * [Toolbox](Code/Toolbox.md)
 
 * Algorithm
-  * [Feature](Algorithm/Feature.md)
 
-* [Software](Software/Windows.md)
-  * [Windows](Software/Windows.md)
+* [Software](Software.md)
