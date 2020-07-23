@@ -1,6 +1,6 @@
 # Windows
 
-## Windows 10 LTSC 安装 Linux 子系统
+## WSL
 
 ### 下载
 
