@@ -8,4 +8,5 @@
   * [Feature](Algorithm/Feature.md)
 * **Software**
   * [Windows](Software/Windows.md)
-
+* **Theory**
+  * [Mathematics](Theory/Mathematics.md)
