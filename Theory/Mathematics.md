@@ -36,3 +36,50 @@ $$
 
 **$\boldsymbol{J}$正交矩阵/超正规矩阵**：$\boldsymbol{Q} \boldsymbol{J} \boldsymbol{Q}^{\mathrm{T}}=\boldsymbol{J}$，其中$\boldsymbol{J}$为符号矩阵
 
+#### 2.4 带型矩阵与三角矩阵
+
+##### 2.4.1 带型矩阵
+
+满足条件$a_{i j}=0,|i-j|>k$的矩阵$A \in \mathbb{C}^{m \times n}$称为**带型矩阵**，若$k=0$，则称为**三对角矩阵**。
+$$
+\boldsymbol{A}=\left[\begin{array}{ccccc}
+a_{11} & a_{12} & a_{13} & \cdots & a_{1 n} \\
+a_{21} & a_{22} & a_{23} & \cdots & a_{2 n} \\
+0 & a_{32} & a_{33} & \cdots & a_{3 n} \\
+0 & 0 & a_{43} & \cdots & a_{4 n} \\
+\vdots & \vdots & \vdots & \vdots & \vdots \\
+0 & 0 & 0 & \cdots & a_{n n}
+\end{array}\right]
+$$
+矩阵$A$称作下$Hessenberg$矩阵，$A^T$称作上$Hessenberg$矩阵。
+
+##### 2.4.2 三角矩阵
+
+**上三角矩阵**：$u_{i j}=0,i>j$的正方矩阵$U$
+
+**下三角矩阵**：$l_{i j}=0,i<j$的正方矩阵$L$
+
+#### 2.5 求和向量与中心化矩阵
+
+##### 2.5.1 求和向量
+
+**求和向量**：所有元素等于1的向量
+
+##### 2.5.2 中心化矩阵
+
+**中心化矩阵**：$\boldsymbol{C}_{n}=\boldsymbol{I}_{n}-\overline{\boldsymbol{J}}_{n}=\boldsymbol{I}_{n}-\frac{1}{n} \boldsymbol{J}_{n}$
+
+#### 2.6 相似矩阵和相合矩阵
+
+##### 2.6.1 相似矩阵
+
+满足$B=S^{-1} A S$的矩阵互为**相似矩阵**，它们具有相同的特征值、行列式和迹
+
+##### 2.6.2 相合矩阵
+
+满足$B=C^{H} A C$的矩阵互为**相合矩阵**，它们具有相同二次型
+
+#### 2.7 Vandermonde矩阵
+
+**Vandermonde矩阵**：矩阵每行或每列元素组成一个等比序列
+
