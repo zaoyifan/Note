@@ -83,3 +83,29 @@ $$
 
 **Vandermonde矩阵**：矩阵每行或每列元素组成一个等比序列
 
+#### 2.8 Fourier矩阵
+
+##### 2.8.1 Fourier矩阵的定义与性质
+
+离散Fourier变换（DFT）：
+$$
+X_{k}=\sum_{n=0}^{N-1} x_{n} \mathrm{e}^{-\mathrm{j} 2 \pi n k / N}=\sum_{n=0}^{N-1} x_{n} w^{n k}, \quad k=0,1, \cdots, N-1
+$$
+Fourier矩阵：
+$$
+\boldsymbol{F}=\left[\begin{array}{cccc}
+1 & 1 & \cdots & 1 \\
+1 & w & \cdots & w^{N-1} \\
+\vdots & \vdots & \vdots & \vdots \\
+1 & w^{N-1} & \cdots & w^{(N-1)(N-1)}
+\end{array}\right], \quad w=\mathrm{e}^{-\mathrm{j} 2 \pi / N}
+$$
+
+##### 2.8.2 适定方程计算的初等行变换方法
+
+##### 2.8.3 FFT算法的推导
+
+#### 2.9 Hadamard矩阵
+
+$\boldsymbol{H}_{n} \in \mathbb{R}^{n \times n}$称为Hadamard矩阵，若它的所有元素取+1或者-1，且$\boldsymbol{H}_{n} \boldsymbol{H}_{n}^{\mathrm{T}}=\boldsymbol{H}_{n}^{\mathrm{T}} \boldsymbol{H}_{n}=n \boldsymbol{I}_{n}$
+
