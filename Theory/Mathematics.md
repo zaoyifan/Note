@@ -109,3 +109,36 @@ $$
 
 $\boldsymbol{H}_{n} \in \mathbb{R}^{n \times n}$称为Hadamard矩阵，若它的所有元素取+1或者-1，且$\boldsymbol{H}_{n} \boldsymbol{H}_{n}^{\mathrm{T}}=\boldsymbol{H}_{n}^{\mathrm{T}} \boldsymbol{H}_{n}=n \boldsymbol{I}_{n}$
 
+#### 2.10 Toeplitz矩阵
+
+任何一条对角线元素取相同值：
+$$
+\boldsymbol{A}=\left[\begin{array}{ccccc}
+a_{0} & a_{-1} & a_{-2} & \cdots & a_{-n} \\
+a_{1} & a_{0} & a_{-1} & \cdots & a_{-n+1} \\
+a_{2} & a_{1} & a_{0} & \ddots & \vdots \\
+\vdots & \vdots & \ddots & \ddots & a_{-1} \\
+a_{n} & a_{n-1} & \cdots & a_{1} & a_{0}
+\end{array}\right]=\left[a_{i-j}\right]_{i, j=0}^{n}
+$$
+
+##### 2.10.1 对称Toeplitz矩阵
+
+$$
+\boldsymbol{A}=\left[a_{|i-j|}\right]_{i, j=0}^{n}=\operatorname{Toep}\left[a_{0}, a_{1}, \cdots, a_{n}\right]
+$$
+
+##### 2.10.2 Toeplitz矩阵的离散余弦变换
+
+#### 2.11 Hankel矩阵
+
+交叉对角线具有相同元素的矩阵：
+$$
+\boldsymbol{A}=\left[\begin{array}{ccccc}
+a_{0} & a_{1} & a_{2} & \cdots & a_{n} \\
+a_{1} & a_{2} & a_{3} & \cdots & a_{n+1} \\
+a_{2} & a_{3} & a_{4} & \cdots & a_{n+2} \\
+\vdots & \vdots & \vdots & \vdots & \vdots \\
+a_{n} & a_{n+1} & a_{n+2} & \cdots & a_{2 n}
+\end{array}\right]
+$$
