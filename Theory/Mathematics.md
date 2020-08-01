@@ -142,3 +142,34 @@ a_{2} & a_{3} & a_{4} & \cdots & a_{n+2} \\
 a_{n} & a_{n+1} & a_{n+2} & \cdots & a_{2 n}
 \end{array}\right]
 $$
+
+### 第3章 矩阵微分
+
+#### 3.1 Jacobian矩阵与梯度矩阵
+
+##### 3.3.1 Jacobian矩阵
+
+Jacobian矩阵：
+$$
+\mathrm{D}_{\boldsymbol{X}} f(\boldsymbol{X})=\frac{\partial f(\boldsymbol{X})}{\partial \boldsymbol{X}^{\mathrm{T}}}=\left[\begin{array}{ccc}
+\frac{\partial f(\boldsymbol{X})}{\partial x_{11}} & \cdots & \frac{\partial f(\boldsymbol{X})}{\partial x_{m 1}} \\
+\vdots & \ddots & \vdots \\
+\frac{\partial f(\boldsymbol{X})}{\partial x_{1 n}} & \cdots & \frac{\partial f(\boldsymbol{X})}{\partial x_{m n}}
+\end{array}\right] \in \mathbb{R}^{n \times m}
+$$
+行偏导向量：
+$$
+D_{\mathrm{vec}} \boldsymbol{x}^{f(\boldsymbol{X})}=\frac{\partial f(\boldsymbol{X})}{\partial \operatorname{vec}^{\mathrm{T}}(\boldsymbol{X})}=\left[\frac{\partial f(\boldsymbol{X})}{\partial x_{11}}, \cdots, \frac{\partial f(\boldsymbol{X})}{\partial x_{m 1}}, \cdots, \frac{\partial f(\boldsymbol{X})}{\partial x_{1 n}}, \cdots, \frac{\partial f(\boldsymbol{X})}{\partial x_{m n}}\right]
+$$
+
+##### 3.1.2 梯度矩阵
+
+$$
+\nabla_{\boldsymbol{X}} f(\boldsymbol{X})=\left[\begin{array}{ccc}
+\frac{\partial f(\boldsymbol{X})}{\partial x_{11}} & \cdots & \frac{\partial f(\boldsymbol{X})}{\partial x_{1 n}} \\
+\vdots & \ddots & \vdots \\
+\frac{\partial f(\boldsymbol{X})}{\partial x_{m 1}} & \cdots & \frac{\partial f(\boldsymbol{X})}{\partial x_{m n}}
+\end{array}\right]=\frac{\partial f(\boldsymbol{X})}{\partial \boldsymbol{X}}
+$$
+
+##### 3.1.3 偏导和梯度计算
