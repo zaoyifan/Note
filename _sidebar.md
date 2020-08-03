@@ -1,15 +1,15 @@
 * **Code**
-  * [Python](Code/Python.md)
-  * [C++](Code/C++.md)
-  * [Matlab](Code/Matlab.md)
-  * [Terminal](Code/Terminal.md)
-  * [Library](Code/Library.md)
+* [Python](Code/Python.md)
+* [C++](Code/C++.md)
+* [Matlab](Code/Matlab.md)
+* [Terminal](Code/Terminal.md)
+* [Library](Code/Library.md)
 * **Algorithm**
-  * [Feature](Algorithm/Feature.md)
+* [Feature](Algorithm/Feature.md)
 * **Software**
-  * [Windows](Software/Windows.md)
+* [Windows](Software/Windows.md)
 * **Theory**
-  * [Mathematics](Theory/Mathematics.md)
+* [Mathematics](Theory/Mathematics.md)
 * **Others**
-  * [Health](Others/Health.md)
-  * [Reading](Others/Reading.md)
+* [Health](Others/Health.md)
+* [Reading](Others/Reading.md)
