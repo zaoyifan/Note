@@ -173,3 +173,27 @@ $$
 $$
 
 ##### 3.1.3 偏导和梯度计算
+
+#### 3.2 一阶实矩阵微分和Jacobian矩阵辨识
+
+##### 3.2.1 一阶实矩阵微分
+
+##### 3.2.2 标量函数的Jacobian矩阵辨识
+
+多变量函数$f\left(x_{1}, \cdots, x_{m}\right)$在点$\left(x_{1}, \cdots, x_{m}\right)$可微分的充分条件是：偏导数$\frac{\partial f}{\partial x_{1}}, \cdots, \frac{\partial f}{\partial x_{m}}$均存在，并且连续。
+$$
+\begin{aligned}
+\mathrm{d} f(\boldsymbol{x}) &=\operatorname{tr}(\boldsymbol{A} \mathrm{d} \boldsymbol{x}) \Longleftrightarrow \mathrm{D}_{\boldsymbol{x}} f(\boldsymbol{x})=\boldsymbol{A} \\
+\mathrm{d} f(\boldsymbol{X}) &=\operatorname{tr}(\boldsymbol{A} \mathrm{d} \boldsymbol{X}) \Longleftrightarrow \mathrm{D}_{\boldsymbol{X}} f(\boldsymbol{X})=\boldsymbol{A}
+\end{aligned}
+$$
+
+##### 3.2.3 实值矩阵函数的Jacobian矩阵辨识
+
+$$
+\begin{array}{c}
+\mathrm{d}(\operatorname{vec} \boldsymbol{F}(\boldsymbol{X}))=\boldsymbol{A} \mathrm{d}(\mathrm{vec} \boldsymbol{X})+\boldsymbol{B} \mathrm{d}\left(\operatorname{vec} \boldsymbol{X}^{\mathrm{T}}\right) \\
+\Longleftrightarrow \mathrm{D}_{\boldsymbol{X}} \boldsymbol{F}(\boldsymbol{X})=\frac{\partial \operatorname{vec} \boldsymbol{F}(\boldsymbol{X})}{\partial(\operatorname{vec} \boldsymbol{X})^{\mathrm{T}}}=\boldsymbol{A}+\boldsymbol{B K}_{m n}
+\end{array}
+$$
+
