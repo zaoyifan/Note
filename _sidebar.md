@@ -10,3 +10,6 @@
   * [Windows](Software/Windows.md)
 * **Theory**
   * [Mathematics](Theory/Mathematics.md)
+* **Others**
+  * [Health](Others/Health.md)
+  * [Reading](Others/Reading.md)
