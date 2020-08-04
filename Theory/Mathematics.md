@@ -197,3 +197,38 @@ $$
 \end{array}
 $$
 
+#### 3.3 二阶实矩阵微分与Hessian矩阵辨识
+
+##### 3.3.1 Hessian矩阵
+
+$$
+\boldsymbol{H}[f(\boldsymbol{x})]=\frac{\partial^{2} f(\boldsymbol{x})}{\partial \boldsymbol{x} \partial \boldsymbol{x}^{\mathrm{T}}}=\frac{\partial}{\partial \boldsymbol{x}}\left[\frac{\partial f(\boldsymbol{x})}{\partial \boldsymbol{x}^{\mathrm{T}}}\right] \in \mathbb{R}^{m \times m}
+$$
+
+$$
+\boldsymbol{H}[f(\boldsymbol{x})]=\nabla_{\boldsymbol{x}}^{2} f(\boldsymbol{x})=\nabla_{\boldsymbol{x}}\left(\mathrm{D}_{\boldsymbol{x}} f(\boldsymbol{x})\right)
+$$
+
+##### 3.3.2 Hessian矩阵的辨识原理
+
+实标量函数二阶微分法则的向量形式：$\mathrm{d}^{2} f(\boldsymbol{x})=(\mathrm{d} \boldsymbol{x})^{\mathrm{T}} \boldsymbol{H}[f(\boldsymbol{x})] \mathrm{d} \boldsymbol{x}$，其中$\boldsymbol{H}[f(\boldsymbol{x})]=\frac{\partial f^{2}(\boldsymbol{x})}{\partial \boldsymbol{x} \partial \boldsymbol{x}^{\mathrm{T}}}$。
+
+以向量$x$或者矩阵$X$为变元的标量函数的二阶微分与Hessian矩阵之间存在下面的二阶辨识关系：
+$$
+\begin{aligned}
+\mathrm{d}^{2} f(\boldsymbol{x})=(\mathrm{d} \boldsymbol{x})^{\mathrm{T}} \boldsymbol{B} \mathrm{d} \boldsymbol{x} & \Longleftrightarrow \boldsymbol{H}[f(\boldsymbol{x})]=\frac{1}{2}\left(\boldsymbol{B}^{\mathrm{T}}+\boldsymbol{B}\right) \\
+\mathrm{d}^{2} f(\boldsymbol{X})=(\mathrm{d}(\operatorname{vec} \boldsymbol{X}))^{\mathrm{T}} \boldsymbol{B} \mathrm{d}(\mathrm{vec} \boldsymbol{X}) & \Longleftrightarrow \boldsymbol{H}[f(\boldsymbol{X})]=\frac{1}{2}\left(\boldsymbol{B}^{\mathrm{T}}+\boldsymbol{B}\right)
+\end{aligned}
+$$
+
+##### 3.3.3 Hessian矩阵的辨识方法
+
+令$f(X)$是$m \times n$实矩阵$X$的实值函数，并可二次微分，则实值函数$f(X)$在$X$的二阶实微分矩阵与Hessian矩阵存在下面的对应关系
+$$
+\mathrm{d}^{2} f(\boldsymbol{X})=\operatorname{tr}\left(\boldsymbol{V}(\mathrm{d} \boldsymbol{X}) \boldsymbol{U}(\mathrm{d} \boldsymbol{X})^{\mathrm{T}}\right) \Longleftrightarrow \boldsymbol{H}[f(\boldsymbol{X})]=\frac{1}{2}\left(\boldsymbol{U}^{\mathrm{T}} \otimes \boldsymbol{V}+\boldsymbol{U} \otimes \boldsymbol{V}^{\mathrm{T}}\right)
+$$
+
+$$
+\mathrm{d}^{2} f(\boldsymbol{X})=\operatorname{tr}(\boldsymbol{B}(\mathrm{d} \boldsymbol{X}) \boldsymbol{C} \mathrm{d} \boldsymbol{X}) \Longleftrightarrow \boldsymbol{H}[f(\boldsymbol{X})]=\frac{1}{2} \boldsymbol{K}_{n m}\left(\boldsymbol{C}^{\mathrm{T}} \otimes \boldsymbol{B}+\boldsymbol{B}^{\mathrm{T}} \otimes \boldsymbol{C}\right)
+$$
+
