@@ -232,3 +232,17 @@ $$
 \mathrm{d}^{2} f(\boldsymbol{X})=\operatorname{tr}(\boldsymbol{B}(\mathrm{d} \boldsymbol{X}) \boldsymbol{C} \mathrm{d} \boldsymbol{X}) \Longleftrightarrow \boldsymbol{H}[f(\boldsymbol{X})]=\frac{1}{2} \boldsymbol{K}_{n m}\left(\boldsymbol{C}^{\mathrm{T}} \otimes \boldsymbol{B}+\boldsymbol{B}^{\mathrm{T}} \otimes \boldsymbol{C}\right)
 $$
 
+#### 3.4 共轭梯度和复Hessian矩阵
+
+##### 3.4.1 全纯函数和复变函数的偏导
+
+函数$f(z)=u(x,y)+jv(x,y)$为全纯函数，仅当实变函数$u(x,y)$和$v(x,y)$同时满足Laplace方程$\frac{\partial^{2} u(x, y)}{\partial x^{2}}+\frac{\partial^{2} u(x, y)}{\partial y^{2}}=0$和$\frac{\partial^{2} v(x, y)}{\partial x^{2}}+\frac{\partial^{2} v(x, y)}{\partial y^{2}}=0$。
+
+满足Laplace方程$\frac{\partial^{2} g(x, y)}{\partial x^{2}}+\frac{\partial^{2} g(x, y)}{\partial y^{2}}=0$的实变函数$g(x, y)$成为调和函数。
+
+复变量$z$和复共轭变量$z^*$是两个独立的变量。
+
+##### 3.4.2 复矩阵微分
+
+##### 3.4.3 复Hessian矩阵
+
