@@ -246,3 +246,70 @@ $$
 
 ##### 3.4.3 复Hessian矩阵
 
+#### 3.5 复梯度矩阵与复Hessian矩阵的辨识
+
+##### 3.5.1 实标量函数的复梯度矩阵辨识
+
+$$
+\mathrm{d} f\left(\boldsymbol{Z}, \boldsymbol{Z}^{*}\right)=\operatorname{tr}\left(\boldsymbol{A} \mathrm{d} \boldsymbol{Z}+\boldsymbol{B} \mathrm{d} \boldsymbol{Z}^{*}\right) \Longleftrightarrow\left\{\begin{array}{l}
+\mathrm{D}_{\boldsymbol{Z}} f\left(\boldsymbol{Z}, \boldsymbol{Z}^{*}\right)=\boldsymbol{A} \\
+\mathrm{D}_{\boldsymbol{Z}^{*}} f\left(\boldsymbol{Z}, \boldsymbol{Z}^{*}\right)=\boldsymbol{B}
+\end{array}\right.
+$$
+
+$$
+\mathrm{d} f\left(\boldsymbol{Z}, \boldsymbol{Z}^{*}\right)=\operatorname{tr}\left(\boldsymbol{A} \mathrm{d} \boldsymbol{Z}+\boldsymbol{B} \mathrm{d} \boldsymbol{Z}^{*}\right) \Longleftrightarrow\left\{\begin{array}{l}
+\nabla_{\boldsymbol{z}} f\left(\boldsymbol{Z}, \boldsymbol{Z}^{*}\right)=\boldsymbol{A}^{\mathrm{T}} \\
+\nabla_{\boldsymbol{Z}^{*}} f\left(\boldsymbol{Z}, \boldsymbol{Z}^{*}\right)=\boldsymbol{B}^{\mathrm{T}}
+\end{array}\right.
+$$
+
+##### 3.5.2 矩阵函数的负梯度矩阵辨识
+
+$$
+\mathrm{d}\left(\operatorname{vec} \boldsymbol{F}\left(\boldsymbol{Z}, \boldsymbol{Z}^{*}\right)\right)=\boldsymbol{A} \mathrm{d}(\operatorname{vec} \boldsymbol{Z})+\boldsymbol{B} \mathrm{d}\left(\operatorname{vec} \boldsymbol{Z}^{*}\right) \Leftrightarrow\left\{\begin{array}{l}
+\mathrm{D}_{\operatorname{vec}(\boldsymbol{Z})} \boldsymbol{F}\left(\boldsymbol{Z}, \boldsymbol{Z}^{*}\right)=\boldsymbol{A} \\
+\mathrm{D}_{\operatorname{vec}\left(\boldsymbol{Z}^{*}\right)} \boldsymbol{F}\left(\boldsymbol{Z}, \boldsymbol{Z}^{*}\right)=\boldsymbol{B}
+\end{array}\right.
+$$
+
+$$
+\mathrm{d}\left(\operatorname{vec} \boldsymbol{F}\left(\boldsymbol{Z}, \boldsymbol{Z}^{*}\right)\right)=\boldsymbol{A} \mathrm{d}(\operatorname{vec} \boldsymbol{Z})+\boldsymbol{B} \mathrm{d}\left(\operatorname{vec} \boldsymbol{Z}^{*}\right) \Leftrightarrow\left\{\begin{array}{l}
+\nabla_{\operatorname{vec}(\boldsymbol{Z})} \boldsymbol{F}\left(\boldsymbol{Z}, \boldsymbol{Z}^{*}\right)=\boldsymbol{A}^{\mathrm{T}} \\
+\nabla_{\operatorname{vec}\left(\boldsymbol{Z}^{*}\right)} \boldsymbol{F}\left(\boldsymbol{Z}, \boldsymbol{Z}^{*}\right)=\boldsymbol{B}^{\mathrm{T}}
+\end{array}\right.
+$$
+
+$$
+\mathrm{d}\left(\boldsymbol{F}\left(\boldsymbol{Z}, \boldsymbol{Z}^{*}\right)\right)=\boldsymbol{A}(\mathrm{d} \boldsymbol{Z}) \boldsymbol{B}+\boldsymbol{C}\left(\mathrm{d} \boldsymbol{Z}^{*}\right) \boldsymbol{D} \Leftrightarrow\left\{\begin{array}{l}
+\mathrm{D}_{\operatorname{vec}(\boldsymbol{Z})} \boldsymbol{F}\left(\boldsymbol{Z}, \boldsymbol{Z}^{*}\right)=\boldsymbol{B}^{\mathrm{T}} \otimes \boldsymbol{A} \\
+\mathrm{D}_{\operatorname{vec}\left(\boldsymbol{Z}^{*}\right)} \boldsymbol{F}\left(\boldsymbol{Z}, \boldsymbol{Z}^{*}\right)=\boldsymbol{D}^{\mathrm{T}} \otimes \boldsymbol{C}
+\end{array}\right.
+$$
+
+$$
+\begin{array}{c}
+\mathrm{d}\left(\boldsymbol{F}\left(\boldsymbol{Z}, \boldsymbol{Z}^{*}\right)\right)=\boldsymbol{A}(\mathrm{d} \boldsymbol{Z})^{\mathrm{T}} \boldsymbol{B}+\boldsymbol{C}\left(\mathrm{d} \boldsymbol{Z}^{*}\right)^{\mathrm{T}} \boldsymbol{D} \\
+\Leftrightarrow\left\{\begin{array}{l}
+\mathrm{D}_{\mathrm{vec}(\boldsymbol{Z})} \boldsymbol{F}\left(\boldsymbol{Z}, \boldsymbol{Z}^{*}\right)=\left(\boldsymbol{B}^{\mathrm{T}} \otimes \boldsymbol{A}\right) \boldsymbol{K}_{m n} \\
+\mathrm{D}_{\mathrm{vec}\left(\boldsymbol{Z}^{*}\right)} \boldsymbol{F}\left(\boldsymbol{Z}, \boldsymbol{Z}^{*}\right)=\left(\boldsymbol{D}^{\mathrm{T}} \otimes \boldsymbol{C}\right) \boldsymbol{K}_{m n}
+\end{array}\right.
+\end{array}
+$$
+
+##### 3.5.3 复Hessian矩阵辨识
+
+$$
+\begin{array}{l}
+\operatorname{tr}\left(C(\mathrm{d} Z) D(\mathrm{d} Z)^{\mathrm{T}}\right) \Leftrightarrow H_{Z, Z}=\frac{1}{2}\left(D^{\mathrm{T}} \otimes C+D \otimes C^{\mathrm{T}}\right) \\
+\operatorname{tr}\left(E(\mathrm{d} Z) F\left(\mathrm{d} Z^{*}\right)^{\mathrm{T}}\right) \Leftrightarrow H_{Z, Z^{*}}=\frac{1}{2}\left(F^{\mathrm{T}} \otimes E+F^{*} \otimes E^{\mathrm{H}}\right)
+\end{array}
+$$
+
+$$
+\begin{array}{l}
+\operatorname{tr}(\boldsymbol{C}(\mathrm{d} \boldsymbol{Z}) \boldsymbol{D} \mathrm{d} \boldsymbol{Z}) \Leftrightarrow \boldsymbol{H}_{\boldsymbol{Z}, \boldsymbol{Z}}=\frac{1}{2} \boldsymbol{K}_{n m}\left(\boldsymbol{D}^{\mathrm{T}} \otimes \boldsymbol{C}+\boldsymbol{C}^{\mathrm{T}} \otimes \boldsymbol{D}\right) \\
+\operatorname{tr}\left(\boldsymbol{E}(\mathrm{d} \boldsymbol{Z}) \boldsymbol{F} \mathrm{d} \boldsymbol{Z}^{*}\right) \Leftrightarrow \boldsymbol{H}_{\boldsymbol{Z}, \boldsymbol{Z}^{*}}=\frac{1}{2} \boldsymbol{K}_{n m}\left(\boldsymbol{F}^{\mathrm{T}} \otimes \boldsymbol{E}+\boldsymbol{E}^{\mathrm{H}} \otimes \boldsymbol{F}^{*}\right)
+\end{array}
+$$
+
