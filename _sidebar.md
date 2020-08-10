@@ -2,12 +2,13 @@
   * [Python](Code/Python.md)
   * [C++](Code/C++.md)
   * [Matlab](Code/Matlab.md)
-  * [Terminal](Code/Terminal.md)
   * [Library](Code/Library.md)
-* **Algorithm**
-  * [Feature](Algorithm/Feature.md)
+  * [Terminal](Code/Terminal.md)
 * **Software**
   * [Windows](Software/Windows.md)
+  * [Ubuntu](Software/Ubuntu.md)
+* **Algorithm**
+  * [Feature](Algorithm/Feature.md)
 * **Theory**
   * [Mathematics](Theory/Mathematics.md)
 * **Others**

@@ -324,3 +324,24 @@ $$
 ##### 4.1.3 多变量函数$f(\boldsymbol{X})$的平稳点和极值点
 
 ##### 4.1.4 实变函数的梯度分析
+
+#### 4.2 复变函数无约束优化的梯度分析
+
+##### 4.2.1 多变量复变函数$f(\boldsymbol{z}, \boldsymbol{z^*})$的平稳点和极值点
+
+##### 4.2.2 多变量复变函数$f(\boldsymbol{Z}, \boldsymbol{Z^*})$的平稳点和极值点
+
+##### 4.2.3 无约束最小化问题的梯度分析
+
+局部极小点辨识的必要条件：若$z_0$或$Z_0$是$f(\boldsymbol{z}, \boldsymbol{z^*})$或$f(\boldsymbol{Z}, \boldsymbol{Z^*})$的局部极小点，则该函数在点$z_0$或$Z_0$的共轭梯度为零向量或零矩阵，并且全Hessian矩阵半正定
+
+局部极小点辨识的必要条件：若函数$f(\boldsymbol{z}, \boldsymbol{z^*})$在$z_0$的共轭梯度向量为零向量，或者$f(\boldsymbol{Z}, \boldsymbol{Z^*})$在$Z_0$的共轭梯度矩阵为零矩阵，并且全Hessian矩阵正定，则$z_0$是函数$f(\boldsymbol{z}, \boldsymbol{z^*})$的严格局部极小点，或$Z_0$是$f(\boldsymbol{Z}, \boldsymbol{Z^*})$的严格局部极小点
+
+#### 4.3 凸优化理论
+
+##### 4.3.1 标准约束优化问题
+
+最小值原理：若$f(x)$是凸优化问题的目标函数，则可行点$x$是最优解点的充分必要条件是
+$$
+\langle\nabla f(\boldsymbol{x}), \boldsymbol{y}-\boldsymbol{x}\rangle \geqslant 0, \quad \forall \boldsymbol{y} \in K
+$$
