@@ -345,3 +345,10 @@ $$
 $$
 \langle\nabla f(\boldsymbol{x}), \boldsymbol{y}-\boldsymbol{x}\rangle \geqslant 0, \quad \forall \boldsymbol{y} \in K
 $$
+
+##### 4.3.2 凸集和凸函数
+
+一个集合$S \in \mathbb{R}^{n}$称为凸集（合），若对任意两个点$\boldsymbol{x}, \boldsymbol{y} \in S$，连接它们的线段也在集合$S$内，即
+$$
+\boldsymbol{x}, \boldsymbol{y} \in S, \quad \theta \in[0,1] \quad \Longrightarrow \quad \theta \boldsymbol{x}+(1-\theta) \boldsymbol{y} \in S
+$$

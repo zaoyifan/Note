@@ -69,7 +69,7 @@ unzip opencv-3.3.0.zip
 cd opencv-3.3.0
 mkdir build
 cd build
-# 3. 运行cmake，OpenCV4默认不生成.pc文件，OPENCV_GENERATE_PKGCONFIG=ON才会生成，DCMAKE_INSTALL_PREFIX和build文件夹不同
+# 3. 运行cmake，OpenCV4默认不生成.pc文件，OPENCV_GENERATE_PKGCONFIG=ON才会生成，DCMAKE_INSTALL_PREFIX和build文件夹不同，注释掉Anaconda环境变量，会和OpenCV编译冲突
 cmake -DCMAKE_BUILD_TYPE=Release \
 -DOPENCV_GENERATE_PKGCONFIG=ON \
 -DCMAKE_INSTALL_PREFIX=/usr/local ..
