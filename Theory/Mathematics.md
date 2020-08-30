@@ -352,3 +352,26 @@ $$
 $$
 \boldsymbol{x}, \boldsymbol{y} \in S, \quad \theta \in[0,1] \quad \Longrightarrow \quad \theta \boldsymbol{x}+(1-\theta) \boldsymbol{y} \in S
 $$
+
+一个凸集$S \subseteq \mathbb{R}^{n}$称为凸锥，若从原点出发，并且通过该集合中任意一点的所有射线以及连接这些射线的任意两点的所有线段仍然在该凸集中，即
+$$
+\boldsymbol{x}, \boldsymbol{y} \in S, \lambda, \mu \geqslant 0 \Longrightarrow \lambda \boldsymbol{x}+\mu \boldsymbol{y} \in S
+$$
+
+##### 4.3.3 凸函数辨识的充分必要条件
+
+凸函数辨识的一阶充分必要条件：令$f: S \rightarrow \mathbb{R}$是定义在$n$维向量空间$\mathbb{R}^n$内的凸集$S$上的函数，并且可微分，则
+$$
+\begin{aligned}
+f(\boldsymbol{x}) & \text { 凸 } \Leftrightarrow\left\langle\nabla_{\boldsymbol{x}} f(\boldsymbol{x})-\nabla_{\boldsymbol{x}} f(\boldsymbol{y}), \boldsymbol{x}-\boldsymbol{y}\right\rangle \geqslant 0, \forall \boldsymbol{x}, \boldsymbol{y} \in S \\
+f(\boldsymbol{x}) \text { 严格凸 } & \Leftrightarrow\left\langle\nabla_{\boldsymbol{x}} f(\boldsymbol{x})-\nabla_{\boldsymbol{x}} f(\boldsymbol{y}), \boldsymbol{x}-\boldsymbol{y}\right\rangle>0, \forall \boldsymbol{x}, \boldsymbol{y} \in S \text { 和 } \boldsymbol{x} \neq \boldsymbol{y} \\
+f(\boldsymbol{x}) \text { 强凸 } & \Leftrightarrow\left\langle\nabla_{\boldsymbol{x}} f(\boldsymbol{x})-\nabla_{\boldsymbol{x}} f(\boldsymbol{y}), \boldsymbol{x}-\boldsymbol{y}\right\rangle \geqslant \mu\|\boldsymbol{x}-\boldsymbol{y}\|_{2}^{2}, \forall \boldsymbol{x}, \boldsymbol{y} \in S
+\end{aligned}
+$$
+凸函数辨识的二阶充分必要条件：令$f: S \rightarrow \mathbb{R}$是定义在$n$维向量空间$\mathbb{R}^n$内的凸集$S$上的函数，并且可二次微分，则$f(x)$为凸函数，当且仅当Hessian矩阵半正定
+$$
+\boldsymbol{H}_{\boldsymbol{x}} f(\boldsymbol{x})=\frac{\partial^{2} f(\boldsymbol{x})}{\partial \boldsymbol{x} \partial \boldsymbol{x}^{\mathrm{T}}} \succeq 0, \quad \forall \boldsymbol{x} \in S
+$$
+
+##### 4.3.4 凸优化方法及其梯度分析
+
