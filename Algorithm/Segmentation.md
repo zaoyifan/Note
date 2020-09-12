@@ -2,5 +2,8 @@
 
 ## 超像素分割
 
-### SLIC
+### 论文
 
+#### 深度学习
+
+Superpixel Sampling Networks (SSN)

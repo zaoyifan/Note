@@ -9,6 +9,7 @@
   * [Ubuntu](Software/Ubuntu.md)
 * **Algorithm**
   * [Feature](Algorithm/Feature.md)
+  * [Segmentation](Algorithm/Segmentation.md)
 * **Theory**
   * [Mathematics](Theory/Mathematics.md)
 * **Others**
