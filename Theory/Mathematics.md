@@ -389,3 +389,20 @@ $$
 
 ##### 4.5.1 次梯度和次微分
 
+一向量$\boldsymbol{g} \in \mathbb{R}^{n}$s是函数$f: \mathbb{R}^{n} \rightarrow \mathbb{R}$在点$\boldsymbol{x} \in \mathbb{R}^{n}$的次梯度向量，若对所有向量$\boldsymbol{y} \in \operatorname{dom}(f)$，有
+$$
+f(\boldsymbol{y}) \geqslant f(\boldsymbol{x})+\boldsymbol{g}^{\mathrm{T}}(\boldsymbol{y}-\boldsymbol{x})
+$$
+函数$f$在点$x$的所有次梯度的集合称为函数$f$在点$x$的次微分
+$$
+\partial f(\boldsymbol{x}) \stackrel{\text { def }}{=} \bigcap_{\boldsymbol{y} \in \operatorname{dom} f}\left\{\boldsymbol{g} \mid f(\boldsymbol{y}) \geqslant f(\boldsymbol{x})+\boldsymbol{g}^{\mathrm{T}}(\boldsymbol{y}-\boldsymbol{x})\right\}
+$$
+
+##### 4.5.2 迫近函数
+
+##### 4.5.2 共轭函数
+
+$$
+g^{*}(\boldsymbol{y}) \stackrel{\text { def }}{=} \sup _{\boldsymbol{x} \in \operatorname{dom} g}\left(\boldsymbol{y}^{\mathrm{T}} \boldsymbol{x}-g(\boldsymbol{x})\right)=\sup _{\boldsymbol{x} \in \operatorname{dom} g}(\langle\boldsymbol{y}, \boldsymbol{x}\rangle-g(\boldsymbol{x}))
+$$
+
