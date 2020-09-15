@@ -93,3 +93,25 @@ sudo ntpdate time.windows.com
 sudo hwclock --localtime --systohc
 ```
 
+## Github配置SSH Key
+
+1. 配置用户名和邮箱
+
+   ```bash
+   git config --global user.name "（这里填写你github上注册的名字）"
+   git config --global user.email "（这里填写你注册邮箱的名字）"
+   git config --list
+   ```
+
+2. SSH配置
+
+   ```bash
+   ssh-keygen -t rsa -C "（注册邮箱名）"
+   cat ~/.ssh/id_rsa.pub
+   ```
+
+3. 验证
+
+   ```bahs
+   ssh -T git@github.com
+   ```
