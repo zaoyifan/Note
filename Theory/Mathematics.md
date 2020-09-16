@@ -400,9 +400,13 @@ $$
 
 ##### 4.5.2 迫近函数
 
-##### 4.5.2 共轭函数
+##### 4.5.3 共轭函数
 
 $$
 g^{*}(\boldsymbol{y}) \stackrel{\text { def }}{=} \sup _{\boldsymbol{x} \in \operatorname{dom} g}\left(\boldsymbol{y}^{\mathrm{T}} \boldsymbol{x}-g(\boldsymbol{x})\right)=\sup _{\boldsymbol{x} \in \operatorname{dom} g}(\langle\boldsymbol{y}, \boldsymbol{x}\rangle-g(\boldsymbol{x}))
 $$
+
+##### 4.5.4 原始-对偶次梯度算法
+
+##### 4.5.5 投影次梯度法
 
