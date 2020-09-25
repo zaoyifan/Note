@@ -22,6 +22,12 @@ deactivate # 退出
 conda remove --prefix=D:\python36\py36 --all # 删除
 ```
 
+### 安装库
+
+```bash
+conda install -c menpo opencv
+```
+
 ## Pip
 
 ### 国内源
