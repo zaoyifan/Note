@@ -10,6 +10,3 @@
 * **Algorithm**
   * [Feature](Algorithm/Feature.md)
   * [Segmentation](Algorithm/Segmentation.md)
-* **Others**
-  * [Health](Others/Health.md)
-  * [Reading](Others/Reading.md)
