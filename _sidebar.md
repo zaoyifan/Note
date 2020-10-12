@@ -9,4 +9,3 @@
   * [Ubuntu](Software/Ubuntu.md)
 * **Algorithm**
   * [Feature](Algorithm/Feature.md)
-  * [Segmentation](Algorithm/Segmentation.md)
