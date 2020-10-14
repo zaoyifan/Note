@@ -171,3 +171,8 @@ pyinstaller deploy.py # 可通过pyinstalller -h查看其他选项，生成的�
 2. 打开history.py文件
 3. 第82行修改为for line in open(filename, 'r', encoding='utf-8'):
 4. 重新启动Python
+
+### PyTorch 与 TensorboardX 的版本兼容性问题
+
+1. PyTorch 1.1.0及以前的版本，最好使用tensorboardX 1.7及以前，因为在1.8更新了add_graph方法导致其可能无法使用。add_graph方法用于可视化模型结构。
+2. PyTorch 1.2.0及以上可以使用更新的tensorboardX，上述的方法实现更新实际上对较新版本的PyTorch有更好的支持。
