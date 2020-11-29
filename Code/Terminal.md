@@ -87,6 +87,15 @@ set http_proxy=
 set https_proxy=
 ```
 
+### 获取当前路径文件列表
+
+```powershell
+# 文件路径
+DIR /S/B >FILELIST.TXT
+# 文件名称
+DIR /B >FILELIST.TXT
+```
+
 ## Git for Windows
 
 ### 设置代理
