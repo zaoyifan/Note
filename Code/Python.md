@@ -4,7 +4,7 @@
 
 ### 虚拟环境
 
-```powershell
+```bash
 # 查看虚拟环境
 conda env list
 # 创建虚拟环境
@@ -25,6 +25,7 @@ conda remove --prefix=D:\python36\py36 --all # 删除
 ### 安装库
 
 ```bash
+# 安装opencv
 conda install -c menpo opencv
 ```
 
@@ -32,7 +33,7 @@ conda install -c menpo opencv
 
 ### 国内源
 
- ```
+ ```bash
 阿里云： http://mirrors.aliyun.com/pypi/simple/
 中国科技大学： https://pypi.mirrors.ustc.edu.cn/simple/ 
 豆瓣(douban)： http://pypi.douban.com/simple/ 
@@ -40,23 +41,54 @@ conda install -c menpo opencv
 中国科学技术大学： http://pypi.mirrors.ustc.edu.cn/simple/
  ```
 
+### Q&A
+
+1. 安装出现SSLError的问题
+
+   ```bash
+   pip install lightgbm -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
+   ```
+
 ## Pyinstaller
 
-### Python程序打包
+### 程序打包
 
-```powershell
+```bash
 pyinstaller deploy.py # 可通过pyinstalller -h查看其他选项，生成的可执行程序在dist文件夹下
 ```
 
-### 打包过程出现的相关问题
+### Q&A
 
-1. 打包tensorflow存在的问题
+1. 打包TensorFlow存在的问题
 
    参考博客：[ubuntu下利用pyinstaller将tensorflow进行打包](https://blog.csdn.net/mr_health/article/details/89684301)
 
 2. RecursionError或UnicodeDecodeError
 
    参考博客：[pyinstaller打包报错： RecursionError: maximum recursion depth exceeded，UnicodeDecodeError](https://blog.csdn.net/sinat_32651363/article/details/82841026)
+
+3. NameError: name ‘defaultParams‘ is not defined
+
+   参考博客：https://blog.csdn.net/whuzhang16/article/details/110522179
+
+4. PyTorch打包出现错误
+
+   ```bash
+   "Couldn't load custom C++ ops. This can happen if your PyTorch and "
+   "torchvision versions are incompatible, or if you had errors while compiling "
+   "torchvision from source. For further information on the compatible versions, check "
+   "https://github.com/pytorch/vision#installation for the compatibility matrix. "
+   "Please check your PyTorch version with torch.__version__ and your torchvision "
+   "version with torchvision.__version__ and verify if they are compatible, and if not "
+   "please reinstall torchvision so that it matches your PyTorch install."
+   ```
+
+   原因在于打包过程中没有定位到TorchVision的\_C.so位置，打包时需要临时修改torchvision文件夹下extension.py，然后将\_C.so复制到可执行程序文件夹下
+
+   ```python
+   # lib_dir = os.path.dirname(__file__)
+   lib_dir = os.path.dirname(sys.executable)
+   ```
 
 ## Visdom
 
