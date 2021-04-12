@@ -1,3 +1,5 @@
+* **Academic**
+  * [Resources](Academic/Resources.md)
 * **Code**
   * [Python](Code/Python.md)
   * [C++](Code/C++.md)
@@ -7,5 +9,3 @@
 * **Software**
   * [Windows](Software/Windows.md)
   * [Ubuntu](Software/Ubuntu.md)
-* **Algorithm**
-  * [Feature](Algorithm/Feature.md)

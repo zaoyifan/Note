@@ -139,7 +139,7 @@ pyinstaller deploy.py # 可通过pyinstalller -h查看其他选项，生成的�
 
 ## mmdetection
 
-### windows 10环境中的配置方法（不可用）
+### windows 10环境中的配置方法
 
 1. 安装VS2019，工作负载勾选使用C++的桌面开发，配置编译环境
 
