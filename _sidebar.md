@@ -1,5 +1,6 @@
 * **Academic**
   * [Resources](Academic/Resources.md)
+  * [Literature](Academic/Literature.md)
 * **Code**
   * [Python](Code/Python.md)
   * [C++](Code/C++.md)
