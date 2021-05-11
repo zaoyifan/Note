@@ -25,7 +25,6 @@
 ### 影像
 
 - [PotPlayer](https://potplayer.org/)
-
 - [ENVI](http://envi.geoscene.cn/)
 - [Photoshop](https://www.adobe.com/cn/products/photoshop.html)
 - [Honeyview](https://www.bandisoft.com/)
