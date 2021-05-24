@@ -1,5 +1,4 @@
 * **Academic**
-  * [Resources](Academic/Resources.md)
   * [Literature](Academic/Literature.md)
 * **Code**
   * [Python](Code/Python.md)
@@ -10,3 +9,4 @@
 * **Software**
   * [Windows](Software/Windows.md)
   * [Ubuntu](Software/Ubuntu.md)
+

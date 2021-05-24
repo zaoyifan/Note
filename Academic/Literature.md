@@ -12,3 +12,9 @@
 
 **模型对于不同数据域的可迁移性：**使用过滤响应归一化层（FRN），消除批处理依赖，加速学习，提高模型鲁棒性
 
+
+
+## MLP
+
+### MLP-Mixer: An all-MLP Architecture for Vision
+
