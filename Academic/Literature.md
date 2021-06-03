@@ -16,5 +16,5 @@
 
 ## MLP
 
-### MLP-Mixer: An all-MLP Architecture for Vision
+### [40%] MLP-Mixer: An all-MLP Architecture for Vision [[Code](https://github.com/google-research/vision_transformer)]
 
