@@ -1,12 +1,12 @@
 # Literature
 
-## 道路提取
+## Road Extraction
 
-### [40%] VecRoad: Point-based Iterative Graph Exploration for Road Graphs Extraction [[Code](https://github.com/tansor/VecRoad)]
+### VecRoad: Point-based Iterative Graph Exploration for Road Graphs Extraction [[Code](https://github.com/tansor/VecRoad)]
 
 
 
-### [20%] A Global Context-aware and Batch-independent Network for road extraction from VHR satellite imagery (GCB-Net)
+### A Global Context-aware and Batch-independent Network for road extraction from VHR satellite imagery (GCB-Net)
 
 **缺少空间上下文关系：**提出全局上下文感知模块（GCA），整合全局上下文特征
 
@@ -14,7 +14,10 @@
 
 
 
-## MLP
+## Lane Detection
 
-### [40%] MLP-Mixer: An all-MLP Architecture for Vision [[Code](https://github.com/google-research/vision_transformer)]
+### Focus on Local: Detecting Lane Marker from Bottom Up via Key Point
 
+本文方法叫做FOLOLane，通过对局部模式进行建模，自底向上实现全局结构的预测。网络包括两个分支，分别进行关键点的预测以及局部几何结构的构建。同时，提出了一个高效率的解码算法，解析得到最终车道线。
+
+![image-20210722163804361](https://cdn.jsdelivr.net/gh/zaoyifan/Gallery/Note/image-20210722163804361.png)
