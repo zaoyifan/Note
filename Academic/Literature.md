@@ -16,8 +16,10 @@
 
 ## Lane Detection
 
-### Focus on Local: Detecting Lane Marker from Bottom Up via Key Point
+### [2021] Focus on Local: Detecting Lane Marker from Bottom Up via Key Point
 
 本文方法叫做FOLOLane，通过对局部模式进行建模，自底向上实现全局结构的预测。网络包括两个分支，分别进行关键点的预测以及局部几何结构的构建。同时，提出了一个高效率的解码算法，解析得到最终车道线。
 
 ![image-20210722163804361](https://cdn.jsdelivr.net/gh/zaoyifan/Gallery/Note/image-20210722163804361.png)
+
+### [2020] End-to-end Lane Shape Prediction with Transformers [[Code](https://github.com/liuruijin17/LSTR)]
